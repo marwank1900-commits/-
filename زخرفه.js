@@ -234,8 +234,12 @@ selectedProduct = "كابات";
 selectedQuality = "";
 
 let colors = [
-"أبيض","أسود","أحمر","أزرق","أخضر",
-"أصفر","رمادي","بني","كحلي","وردي"
+"بيج",
+"أسود",
+"كبدي",
+"رمادي",
+"بني غامق",
+"أبيض"
 ];
 
 let html = `<button onclick="goBack()">رجوع</button><br><br>`;
@@ -258,8 +262,17 @@ updateSummary();
    اختيار اللون
 ========================= */
 function selectColor(color){
-selectedColor = color;
-updateSummary();
+    selectedColor = color;
+    updateSummary();
+
+    // إغلاق قائمة الألوان والرجوع للواجهة السابقة
+    if(historyStack.length > 0){
+        historyStack.pop();
+
+        let prev = historyStack[historyStack.length - 1] || "";
+
+        document.getElementById("productsBox").innerHTML = prev;
+    }
 }
 
 /* =========================
