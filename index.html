@@ -2,201 +2,153 @@
 <html lang="ar" dir="rtl">
 
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>زخرفة</title>
-
-<link rel="stylesheet" href="زخرفه.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>زخرفة</title>
+    <link rel="stylesheet" href="زخرفه.css">
 </head>
 
 <body>
 
-<nav>
-
-<div class="logo">زخرفة</div>
-
-<ul>
-<!-- تم حذف عناصر القائمة -->
-</ul>
-
-</nav>
-
-<section class="hero">
-
-<div class="hero-text">
-
-<h1>أهلاً بك في <span>زخرفة</span></h1>
-
-<p>
-متخصصون في تطريز الأسماء والشعارات
-بأعلى جودة وأناقة.
-</p>
-
-<button onclick="scrollToForm()">ابدأ طلبك الآن</button>
-
-</div>
-
-<img src="images/Logo.PNG">
-
-</section>
-
-<section class="steps">
-
-<div class="step">
-<div class="step-circle">1</div>
-<h3>بياناتك</h3>
-<p>ادخل اسمك ورقمك</p>
-</div>
-
-<div class="step">
-<div class="step-circle">2</div>
-<h3>اختر القسم</h3>
-<p>حدد نوع التطريز</p>
-</div>
-
-<div class="step">
-<div class="step-circle">3</div>
-<h3>التفاصيل</h3>
-<p>أدخل تفاصيل الطلب</p>
-</div>
-
-<div class="step">
-<div class="step-circle">4</div>
-<h3>إرسال</h3>
-<p>إرسال الطلب عبر واتساب</p>
-</div>
-
-</section>
-
-<section class="form-section">
-
-<div class="card">
-
-<h2>بياناتك</h2>
-
-<input type="text" id="name" placeholder="الاسم الكامل" onkeyup="updateSummary()">
-
-<input type="text" id="phone" placeholder="رقم الجوال" onkeyup="updateSummary()">
-
-<select id="category" onchange="updateSummary(); showCategoryProducts()">
-
-<option value="">اختر القسم</option>
-<option value="جملة">جملة</option>
-<option value="تجزئة">تجزئة</option>
-
-</select>
-
-</div>
-
-<div class="card">
-
-<h2>تفاصيل الطلب</h2>
-
-<div id="productsBox" class="products"></div>
-
-<!-- ❌ تم حذف حقل اللون -->
-
-<input type="text" id="size" placeholder="المقاس" onkeyup="updateSummary()">
-
-<select id="pickup" onchange="updateSummary()">
-
-<option value="">اختر موقع الاستلام</option>
-
-<option value="الحجاز القديم - محل نوري على الشارع الرئيسي">
-الحجاز القديم - محل نوري على الشارع الرئيسي
-</option>
-
-<option value="كريتر - الهناء مول محل ايفا الدور الارضي">
-كريتر - الهناء مول محل ايفا الدور الارضي
-</option>
-
-<option value="الشعب - مدينة عدن الجديدة ( الوالي ) معمل زخرفة">
-الشعب - مدينة عدن الجديدة ( الوالي ) معمل زخرفة
-</option>
-
-</select>
-
-<textarea id="details" placeholder="اكتب تفاصيل الطلب" onkeyup="updateSummary()"></textarea>
-
-<button class="btn" onclick="sendWhatsApp()">إرسال الطلب</button>
-
-</div>
-
-<div class="card">
-
-<h2>ملخص الطلب</h2>
-
-<div class="summary-item">
-<span>الاسم</span>
-<p id="summaryName">-</p>
-</div>
-
-<div class="summary-item">
-<span>رقم الجوال</span>
-<p id="summaryPhone">-</p>
-</div>
-
-<div class="summary-item">
-<span>القسم</span>
-<p id="summaryCategory">-</p>
-</div>
-
-<div class="summary-item">
-<span>النوع</span>
-<p id="summaryType">-</p>
-</div>
-
-<!-- 🔥 اللون باقي في الملخص -->
-<div class="summary-item">
-<span>اللون</span>
-<p id="summaryColor">-</p>
-</div>
-
-<div class="summary-item">
-<span>المقاس</span>
-<p id="summarySize">-</p>
-</div>
-
-<div class="summary-item">
-<span>موقع الاستلام</span>
-<p id="summaryPickup">-</p>
-</div>
-
-<div class="summary-item">
-<span>التفاصيل</span>
-<p id="summaryDetails">-</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="whatsapp">
-
-<h2>إرسال مباشر عبر واتساب</h2>
-
-<p>سيتم فتح الواتساب لإرسال طلبك مباشرة</p>
-
-<button onclick="sendWhatsApp()">إرسال عبر واتساب</button>
-
-</section>
-
-<footer>
-
-<h2>زخرفة</h2>
-
-<p>لتطريز</p>
-
-<br>
-
-<p>+967770534676</p>
-
-</footer>
-
-<script src="زخرفه.js"></script>
-
+    <nav>
+        <div class="logo">زخرفة</div>
+
+        <div class="logo-left-container">
+            <img src="images/sup logo.png" alt="شعار زخرفة العلوي" class="nav-logo">
+        </div>
+
+        <ul>
+            </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>أهلاً بك في <span>زخرفة</span></h1>
+            <p>
+                متخصصون في تطريز الأسماء والشعارات
+                بأعلى جودة وأناقة.
+            </p>
+            <button onclick="scrollToForm()">ابدأ طلبك الآن</button>
+        </div>
+
+        <img src="images/Logo.PNG" alt="الصورة الرئيسية">
+    </section>
+
+    <section class="steps">
+        <div class="step">
+            <div class="step-circle">1</div>
+            <h3>بياناتك</h3>
+            <p>ادخل اسمك ورقمك</p>
+        </div>
+
+        <div class="step">
+            <div class="step-circle">2</div>
+            <h3>اختر القسم</h3>
+            <p>حدد نوع التطريز</p>
+        </div>
+
+        <div class="step">
+            <div class="step-circle">3</div>
+            <h3>التفاصيل</h3>
+            <p>أدخل تفاصيل الطلب</p>
+        </div>
+
+        <div class="step">
+            <div class="step-circle">4</div>
+            <h3>إرسال</h3>
+            <p>إرسال الطلب عبر واتساب</p>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <div class="card">
+            <h2>بياناتك</h2>
+            <input type="text" id="name" placeholder="الاسم الكامل" onkeyup="updateSummary()">
+            <input type="text" id="phone" placeholder="رقم الجوال" onkeyup="updateSummary()">
+            <select id="category" onchange="updateSummary(); showCategoryProducts()">
+                <option value="">اختر القسم</option>
+                <option value="جملة">جملة</option>
+                <option value="تجزئة">تجزئة</option>
+            </select>
+        </div>
+
+        <div class="card">
+            <h2>تفاصيل الطلب</h2>
+            <div id="productsBox" class="products"></div>
+
+            <input type="text" id="size" placeholder="المقاس" onkeyup="updateSummary()">
+
+            <select id="pickup" onchange="updateSummary()">
+                <option value="">اختر موقع الاستلام</option>
+                <option value="الحجاز القديم - محل نوري على الشارع الرئيسي">
+                    الحجاز القديم - محل نوري على الشارع الرئيسي
+                </option>
+                <option value="كريتر - الهناء مول محل ايفا الدور الارضي">
+                    كريتر - الهناء مول محل ايفا الدور الارضي
+                </option>
+                <option value="الشعب - مدينة عدن الجديدة ( الوالي ) معمل زخرفة">
+                    الشعب - مدينة عدن الجديدة ( الوالي ) معمل زخرفة
+                </option>
+            </select>
+
+            <textarea id="details" placeholder="اكتب تفاصيل الطلب" onkeyup="updateSummary()"></textarea>
+            <button class="btn" onclick="sendWhatsApp()">إرسال الطلب</button>
+        </div>
+
+        <div class="card">
+            <h2>ملخص الطلب</h2>
+            <div class="summary-item">
+                <span>الاسم</span>
+                <p id="summaryName">-</p>
+            </div>
+
+            <div class="summary-item">
+                <span>رقم الجوال</span>
+                <p id="summaryPhone">-</p>
+            </div>
+
+            <div class="summary-item">
+                <span>القسم</span>
+                <p id="summaryCategory">-</p>
+            </div>
+
+            <div class="summary-item">
+                <span>النوع</span>
+                <p id="summaryType">-</p>
+            </div>
+
+            <div class="summary-item">
+                <span>اللون</span>
+                <p id="summaryColor">-</p>
+            </div>
+
+            <div class="summary-item">
+                <span>المقاس</span>
+                <p id="summarySize">-</p>
+            </div>
+
+            <div class="summary-item">
+                <span>موقع الاستلام</span>
+                <p id="summaryPickup">-</p>
+            </div>
+
+            <div class="summary-item">
+                <span>التفاصيل</span>
+                <p id="summaryDetails">-</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="whatsapp">
+        <h2>إرسال مباشر عبر واتساب</h2>
+        <p>سيتم فتح الواتساب لإرسال طلبك مباشرة</p>
+        <button onclick="sendWhatsApp()">إرسال عبر واتساب</button>
+    </section>
+
+    <footer>
+        <h2>زخرفة</h2>
+    </footer>
+
+    <script src="زخرفه.js"></script>
 </body>
 </html>
