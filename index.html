@@ -18,7 +18,7 @@
         </div>
 
         <ul>
-            </ul>
+        </ul>
     </nav>
 
     <section class="hero">
@@ -61,10 +61,14 @@
     </section>
 
     <section class="form-section">
+
         <div class="card">
             <h2>بياناتك</h2>
+
             <input type="text" id="name" placeholder="الاسم الكامل" onkeyup="updateSummary()">
+
             <input type="text" id="phone" placeholder="رقم الجوال" onkeyup="updateSummary()">
+
             <select id="category" onchange="updateSummary(); showCategoryProducts()">
                 <option value="">اختر القسم</option>
                 <option value="جملة">جملة</option>
@@ -73,30 +77,41 @@
         </div>
 
         <div class="card">
+
             <h2>تفاصيل الطلب</h2>
+
             <div id="productsBox" class="products"></div>
 
             <input type="text" id="size" placeholder="المقاس" onkeyup="updateSummary()">
 
             <select id="pickup" onchange="updateSummary()">
+
                 <option value="">اختر موقع الاستلام</option>
+
                 <option value="الحجاز القديم - محل نوري على الشارع الرئيسي">
                     الحجاز القديم - محل نوري على الشارع الرئيسي
                 </option>
+
                 <option value="كريتر - الهناء مول محل ايفا الدور الارضي">
                     كريتر - الهناء مول محل ايفا الدور الارضي
                 </option>
+
                 <option value="الشعب - مدينة عدن الجديدة ( الوالي ) معمل زخرفة">
                     الشعب - مدينة عدن الجديدة ( الوالي ) معمل زخرفة
                 </option>
+
             </select>
 
             <textarea id="details" placeholder="اكتب تفاصيل الطلب" onkeyup="updateSummary()"></textarea>
+
             <button class="btn" onclick="sendWhatsApp()">إرسال الطلب</button>
+
         </div>
 
         <div class="card">
+
             <h2>ملخص الطلب</h2>
+
             <div class="summary-item">
                 <span>الاسم</span>
                 <p id="summaryName">-</p>
@@ -136,19 +151,52 @@
                 <span>التفاصيل</span>
                 <p id="summaryDetails">-</p>
             </div>
+
         </div>
+
     </section>
 
     <section class="whatsapp">
+
         <h2>إرسال مباشر عبر واتساب</h2>
+
         <p>سيتم فتح الواتساب لإرسال طلبك مباشرة</p>
+
         <button onclick="sendWhatsApp()">إرسال عبر واتساب</button>
+
     </section>
+
+    <!-- نافذة التنبيه -->
+
+    <div id="customAlert" class="custom-alert">
+
+        <div class="alert-box">
+
+            <h2>📌 ملاحظة مهمة</h2>
+
+            <p>
+                لا تنسَ إرسال الصورة أو التصميم
+                الذي ترغب بتطريزه بعد إرسال الطلب ✨
+            </p>
+
+            <div class="alert-buttons">
+
+                <button onclick="continueWhatsApp()">متابعة</button>
+
+                <button class="cancel-btn" onclick="closeAlert()">إلغاء</button>
+
+            </div>
+
+        </div>
+
+    </div>
 
     <footer>
         <h2>زخرفة</h2>
     </footer>
 
     <script src="زخرفه.js"></script>
+
 </body>
+
 </html>
